@@ -4,6 +4,7 @@ import java.util.List;
 
 public class SumElements {
     public static int calculate(List<Integer> numbers) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        // return numbers.stream().mapToInt(i -> i).sum(); // sätt 1
+        return (int)numbers.stream().mapToInt(i -> i).summaryStatistics().getSum(); // sätt 2, mer krångligt
     }
 }

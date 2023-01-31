@@ -25,7 +25,4 @@ public class GetOldestPersonTest {
         assertEquals(resultPerson.getName(), "Eva");
 
     }
-
-
-
 }

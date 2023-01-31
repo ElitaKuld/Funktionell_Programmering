@@ -4,11 +4,11 @@ import java.util.List;
 
 public class FlattenCollection {
     public static List<String> transform(List<List<String>> l){
-        throw new UnsupportedOperationException("Not supported yet.");
+        return l.stream().flatMap(lista -> lista.stream()).toList();
     }
 
     //valfri att implementera
     static List<String> goingDeeper(List<List<List<String>>> collection) {
-        throw new UnsupportedOperationException("Not supported yet.");
+       return collection.stream().flatMap(lista -> lista.stream()).flatMap(nextLevelList -> nextLevelList.stream()).toList();
     }
 }
