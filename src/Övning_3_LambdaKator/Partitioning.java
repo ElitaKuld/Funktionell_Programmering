@@ -2,9 +2,10 @@ package Övning_3_LambdaKator;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Partitioning {
     public static Map<Boolean, List<Person>> partitionAdults(List<Person> people) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return people.stream().collect(Collectors.partitioningBy(person -> person.getAge()>=18));
     }
 }

@@ -15,7 +15,7 @@ Group people by nationality
 public class GroupingTest {
 
     @Test
-    public void partitionAdultsShouldSeparateKidsFromAdults() {
+    public void groupByNationality() {
 
         Person sara = new Person("Sara", 4, "Norwegian");
         Person viktor = new Person("Viktor", 40, "Serbian");

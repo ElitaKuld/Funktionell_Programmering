@@ -1,7 +1,10 @@
 package Övning_4_Quiz;
 
+import Övning_1a_BasicStrömmarFilter.Book;
+
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /*
 För samtliga funktioner i denna fil, byt ut "throw UnSupportedException"-raden
